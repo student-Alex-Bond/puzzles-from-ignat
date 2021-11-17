@@ -1,0 +1,22 @@
+.d{
+    color: #8904B1;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.button{
+    margin-left: 5px;
+}
+.affair{
+    display: inline-block;
+    width: 130px;
+
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.priority{
+    display: inline-block;
+    width: 90px;
+    margin-right: 10px;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
