@@ -1,6 +1,7 @@
 import React from 'react'
 import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 type AffairsPropsType = { // need to fix any
     data: Array<AffairType>
@@ -29,10 +30,10 @@ function Affairs(props: AffairsPropsType) {
 
             {mappedAffairs}
 
-            <button onClick={setAll} style ={{marginRight: '10px'}}>All</button>
-            <button onClick={setHigh} style ={{marginRight: '10px'}}>High</button>
-            <button onClick={setMiddle} style ={{marginRight: '10px'}}>Middle</button>
-            <button onClick={setLow}>Low</button>
+            <SuperButton onClick={setAll} style ={{marginRight: '10px'}}>All</SuperButton>
+            <SuperButton onClick={setHigh} style ={{marginRight: '10px'}}>High</SuperButton>
+            <SuperButton onClick={setMiddle} style ={{marginRight: '10px'}}>Middle</SuperButton>
+            <SuperButton onClick={setLow}>Low</SuperButton>
         </div>
     )
 }

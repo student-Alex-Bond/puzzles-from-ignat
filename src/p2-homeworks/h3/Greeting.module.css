@@ -2,9 +2,9 @@
     display: flex;
     margin: 10px;
     align-items: flex-start;
-
     width: 250px;
     justify-content: space-between;
+    align-items: center;
 }
 button {
     height: 22px;
