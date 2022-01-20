@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/puzzles-from-ignat/static/css/main.3eaf35fe.chunk.css",
-    "main.js": "/puzzles-from-ignat/static/js/main.e0a69253.chunk.js",
-    "main.js.map": "/puzzles-from-ignat/static/js/main.e0a69253.chunk.js.map",
+    "main.css": "/puzzles-from-ignat/static/css/main.9042c7fd.chunk.css",
+    "main.js": "/puzzles-from-ignat/static/js/main.31d2b2a9.chunk.js",
+    "main.js.map": "/puzzles-from-ignat/static/js/main.31d2b2a9.chunk.js.map",
     "runtime-main.js": "/puzzles-from-ignat/static/js/runtime-main.47974b0b.js",
     "runtime-main.js.map": "/puzzles-from-ignat/static/js/runtime-main.47974b0b.js.map",
-    "static/js/2.dc8d894d.chunk.js": "/puzzles-from-ignat/static/js/2.dc8d894d.chunk.js",
-    "static/js/2.dc8d894d.chunk.js.map": "/puzzles-from-ignat/static/js/2.dc8d894d.chunk.js.map",
+    "static/js/2.ed110401.chunk.js": "/puzzles-from-ignat/static/js/2.ed110401.chunk.js",
+    "static/js/2.ed110401.chunk.js.map": "/puzzles-from-ignat/static/js/2.ed110401.chunk.js.map",
     "index.html": "/puzzles-from-ignat/index.html",
-    "static/css/main.3eaf35fe.chunk.css.map": "/puzzles-from-ignat/static/css/main.3eaf35fe.chunk.css.map",
-    "static/js/2.dc8d894d.chunk.js.LICENSE.txt": "/puzzles-from-ignat/static/js/2.dc8d894d.chunk.js.LICENSE.txt"
+    "static/css/main.9042c7fd.chunk.css.map": "/puzzles-from-ignat/static/css/main.9042c7fd.chunk.css.map",
+    "static/js/2.ed110401.chunk.js.LICENSE.txt": "/puzzles-from-ignat/static/js/2.ed110401.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.47974b0b.js",
-    "static/js/2.dc8d894d.chunk.js",
-    "static/css/main.3eaf35fe.chunk.css",
-    "static/js/main.e0a69253.chunk.js"
+    "static/js/2.ed110401.chunk.js",
+    "static/css/main.9042c7fd.chunk.css",
+    "static/js/main.31d2b2a9.chunk.js"
   ]
 }
