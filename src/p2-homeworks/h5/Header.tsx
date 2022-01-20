@@ -27,7 +27,7 @@ function Header() {
             <div className={styles.arrow}>
                    <img onClick={() => { setIsView(!isView)}}
                         className={isView? styles.pictureCollapsed:styles.picture}
-                        src={arrow} />
+                        src={arrow} alt={'arrow'}/>
             </div>
             {/*// add NavLinks*/}
 
