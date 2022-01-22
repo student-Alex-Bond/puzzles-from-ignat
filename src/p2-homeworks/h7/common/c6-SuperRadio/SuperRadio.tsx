@@ -29,7 +29,6 @@ const SuperRadio: React.FC<SuperRadioPropsType> = (
         <label  key={name + '-' + i}>
             <input
                 style={{width: '20px', margin: '5px'}}
-
                 type={'radio'}
                 onChange={onChangeCallback}
                 value={o}
