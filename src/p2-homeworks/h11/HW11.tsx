@@ -4,17 +4,24 @@ import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange'
 
 function HW11() {
     const [value1, setValue1] = useState(0)
-    const [value2, setValue2] = useState(100)
+    let [value2, setValue2] = useState(100)
 
-    const onChangeRange  = (value: [number, number] | undefined) => {
-        // @ts-ignore
-        setValue1(value[0])
-        // @ts-ignore
-        setValue2(value[1])
+    if (value1 > value2) {
+        value2 = value1
     }
 
-    // @ts-ignore
-    // @ts-ignore
+
+    const onChangeRange = (value: [number, number] | undefined) => {
+
+        if (value) {
+            setValue1(value[0])
+        }
+
+        if (value) {
+            setValue2(value[1])
+        }
+    }
+
     return (
         <div>
             <hr/>
@@ -22,16 +29,18 @@ function HW11() {
 
 
             {/*should work (должно работать)*/}
-            <div>
-                <span>{value1}</span>
+            <div >
+                <span style={{display: 'inline-block',width: '30px'}}>{value1}</span>
                 <SuperRange value={value1} step={1}
-                            onChange={(e) => {setValue1(e.currentTarget.valueAsNumber)}}
+                            onChange={(e) => {
+                                setValue1(e.currentTarget.valueAsNumber)
+                            }}
                     // сделать так чтоб value1 изменялось
                 />
             </div>
 
-            <div>
-                <span>{value1}</span>
+            <div style={{display: 'flex'}}>
+                <span style={{width: '30px'}}>{value1}</span>
                 <SuperDoubleRange value={[value1, value2]} onChangeRange={onChangeRange}
                     // сделать так чтоб value1 и value2 изменялось
                 />

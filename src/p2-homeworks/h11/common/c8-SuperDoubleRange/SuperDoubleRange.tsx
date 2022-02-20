@@ -18,8 +18,11 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
 
     let valueMinMax = value
 
-
-
+    const onChangeRangeCallback = () => {
+        if (onChangeRange) {
+            onChangeRange(valueMinMax)
+        }
+    }
 
     return (
         <div className={styles.doubleRange}>
@@ -27,21 +30,18 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
                    onChange={(e) => {
                        if (valueMinMax) {
                            valueMinMax[0] = e.currentTarget.valueAsNumber
+                           onChangeRangeCallback()
                        }
-                       if (onChangeRange) {
-                           onChangeRange(valueMinMax)
-                       }
+
                    }}
             />
-            <input type={"range"} value={valueMinMax ? valueMinMax[1] : ""}
-                   onChange={(e) => {
-                       if (valueMinMax) {
-                           valueMinMax[1] = e.currentTarget.valueAsNumber
-                       }
-                       if (onChangeRange) {
-                           onChangeRange(valueMinMax)
-                       }
-                   }}/>
+          <div className={styles.max}>  <input className={styles.min} type={"range"} value={valueMinMax ? valueMinMax[1] : ""}
+                        onChange={(e) => {
+                            if (valueMinMax) {
+                                valueMinMax[1] = e.currentTarget.valueAsNumber
+                            }
+                            onChangeRangeCallback()
+                        }}/></div>
         </div>
     )
 }
