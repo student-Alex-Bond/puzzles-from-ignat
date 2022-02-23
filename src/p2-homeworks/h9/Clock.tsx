@@ -18,6 +18,10 @@ function Clock() {
             // setDate
         }, 1000)
         setTimerId(id)
+
+        return ()=> {
+            clearInterval(id)
+        }
     }
 
     const onMouseEnter = () => {
