@@ -1,0 +1,11 @@
+.input{
+    height: 35px;
+    width: 35px;
+}
+.wrapper{
+    margin: 20px 0 0 15px;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-between;
+}
