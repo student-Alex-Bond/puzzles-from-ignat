@@ -27,7 +27,7 @@
 .messageItem:after {
     left: -26px;
     width: 26px;
-    background-color: white;
+    background-color: yellow;
     border-bottom-right-radius: 10px;
     content: "";
     position: absolute;
